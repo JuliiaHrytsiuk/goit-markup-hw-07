@@ -335,14 +335,14 @@ img {
   margin-top: -30px;
 }
 
-.gallery__item {
+.gallery-set__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   position: relative;
 }
 
-.gallery__name {
+.gallery-set__name {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -353,7 +353,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.gallery__label {
+.gallery-set__label {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -718,7 +718,7 @@ img {
   text-align: center;
 }
 
-.footer input {
+.subsciption__input {
   background-color: #2f303a;
   border: none;
   color: var(--secondary-text-color);
@@ -726,7 +726,7 @@ img {
   width: 100%;
 }
 
-.footer input::placeholder {
+.subsciption__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
