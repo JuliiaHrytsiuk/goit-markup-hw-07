@@ -140,7 +140,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.studio-black {
+.logo__text {
   color: #000000;
   margin-right: 90px;
 }
@@ -189,7 +189,7 @@ img {
   color: var(--accent-color);
 }
 
-.current::after {
+.navigation__link--active::after {
   content: '';
   position: absolute;
   display: block;
@@ -605,7 +605,7 @@ img {
 /* ============= END CLIENTS ============= */
 
 /* ============= FOOTER ============= */
-.studio-white {
+.logo__text--inverse {
   color: var(--secondary-text-color);
 }
 
