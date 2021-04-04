@@ -81,8 +81,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -119,6 +118,11 @@ img {
   margin-left: auto;
 }
 
+.address .contact-set {
+  display: block;
+  margin-top: 20px;
+}
+
 .contact-set__item {
   font-weight: normal;
   font-size: 14px;
@@ -128,6 +132,19 @@ img {
 
 .contact-set__item:not(:last-child) {
   margin-right: var(--section-mrg);
+}
+
+.contact-set__item .contact-set__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address .contact-set .contact-set__item:not(:last-child) {
+  margin-bottom: 9px;
+  margin-right: 0px;
+}
+
+.contact-set__item .contact-set__address {
+  color: var(--secondary-text-color);
 }
 
 .contact-set__data {
@@ -142,36 +159,14 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-set__icon {
-  display: block;
-  margin-right: 10px;
-}
-
-.contact-set__data:hover,
-.contact-set__data:focus {
+.contact-set__data:hover, .contact-set__data:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.contact-set__address {
-  color: var(--secondary-text-color);
-}
-
-.address .contact-set {
+.contact-set__icon {
   display: block;
-  margin-top: 20px;
-}
-
-.contact-set .physical-address {
-  margin-right: 0;
-}
-
-.contact-set__item .contact-set__link {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.address .contact-set .contact-set__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-right: 10px;
 }
 
 .header {
@@ -213,12 +208,7 @@ img {
   position: relative;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--accent-color);
-}
-
-.navigation__list .link.current {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
@@ -387,8 +377,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   cursor: pointer;
@@ -411,8 +400,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-set__item:hover,
-.portfolio-set__item:focus {
+.portfolio-set__item:hover, .portfolio-set__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -545,8 +533,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-network__link:focus,
-.social-network__link:hover {
+.social-network__link:focus, .social-network__link:hover {
   fill: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
@@ -636,7 +623,7 @@ img {
   align-items: center;
 }
 
-.footer-invitation__item:not(:last-child) {
+.footer-invitation__icon:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -649,8 +636,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-invitation__link:focus,
-.footer-invitation__link:hover {
+.footer-invitation__link:focus, .footer-invitation__link:hover {
   fill: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
@@ -718,6 +704,10 @@ img {
   margin-left: 10px;
 }
 
+.footer-invitation__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -769,6 +759,10 @@ img {
   margin-top: 12px;
 }
 
+.modal-form .modal-btn {
+  align-self: center;
+}
+
 .modal__title {
   font-weight: bold;
   font-size: 20px;
@@ -808,16 +802,16 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-form__input:focus + .modal-form__icon {
-  fill: var(--accent-color);
-}
-
 .modal-form__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__input:focus + .modal-form__icon {
+  fill: var(--accent-color);
 }
 
 .modal-form__textarea {
@@ -879,9 +873,5 @@ img {
   background-image: url(../images/icon_check.svg);
   border: none;
   box-shadow: none;
-}
-
-.modal-form .modal-btn {
-  align-self: center;
 }
 /*# sourceMappingURL=main.css.map */

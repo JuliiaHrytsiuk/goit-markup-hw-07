@@ -2,10 +2,10 @@
   background: #f5f4fa;
   padding-top: var(--section-ptb);
   padding-bottom: var(--section-ptb);
-}
 
-.team .title {
-  margin-bottom: var(--section-mrg);
+  .title {
+    margin-bottom: var(--section-mrg);
+  }
 }
 
 .team-member__name {
@@ -72,10 +72,10 @@
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-network__link:focus,
-.social-network__link:hover {
-  fill: var(--secondary-text-color);
-  background-color: var(--accent-color);
+  &:focus,
+  &:hover {
+    fill: var(--secondary-text-color);
+    background-color: var(--accent-color);
+  }
 }

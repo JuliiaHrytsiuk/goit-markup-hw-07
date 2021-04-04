@@ -6,11 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.header .сontainer {
-  display: flex;
-  align-items: center;
+  .сontainer {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation {
@@ -35,15 +35,11 @@
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-}
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--accent-color);
-}
-
-.navigation__list .link.current {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navigation__link--active::after {
